@@ -1,0 +1,164 @@
+/* =====================
+BANNER
+===================== */
+.banner-img {
+  width: 100%;
+   max-height: 420px;      /* 👈 control size */
+  object-fit: cover;     /* 👈 crop nicely */
+  display: block;
+}
+
+/* =====================
+HOME PAGE LAYOUT
+===================== */
+.home-page {
+  padding: 20px;
+}
+
+.home-page h1 {
+  color: #333;
+  font-family: "Playfair Display", serif;
+  margin-bottom: 20px;
+}
+
+/* =====================
+PRODUCT CARD
+===================== */
+.home-page .card {
+  background: #ffffff;
+  width: 18rem;
+  border-radius: 14px;
+  border: none;
+  overflow: hidden;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+.home-page .card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 35px rgba(0, 0, 0, 0.15);
+}
+
+/* Image */
+.home-page .card-img-top {
+  height: 260px !important;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.home-page .card:hover img {
+  transform: scale(1.05);
+}
+
+/* Card Body */
+.home-page .card-body {
+  padding: 15px;
+}
+
+.home-page .card-name-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.home-page .card-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #222;
+}
+
+.home-page .card-price {
+  color: #198754;
+  font-weight: bold;
+}
+
+/* Description */
+.home-page .card-text {
+  font-size: 14px;
+  color: #666;
+  margin: 8px 0 12px;
+}
+
+/* Buttons */
+.home-page button {
+  width: 100%;
+  border-radius: 25px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.home-page .btn-info {
+  background: #0dcaf0;
+  border: none;
+}
+
+.home-page .btn-dark {
+  background: #212529;
+  border: none;
+}
+
+/* =====================
+FILTER SECTION
+===================== */
+.filters {
+  background: #ffffff;
+  padding: 18px;
+  border-radius: 14px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.filters h4 {
+  margin-top: 20px;
+  color: #444 !important;
+  font-weight: 600;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 8px;
+}
+
+.ant-checkbox-wrapper,
+.ant-radio-wrapper {
+  margin: 6px 0;
+}
+
+/* Reset Button */
+.filters button {
+  background: #dc3545;
+  border: none;
+  border-radius: 25px;
+  margin-top: 20px;
+  font-weight: 600;
+}
+
+/* =====================
+LOAD MORE
+===================== */
+.loadmore {
+  background: none;
+  border: none;
+  color: #198754;
+  font-weight: 600;
+  font-size: 18px !important;
+}
+
+/* =====================
+RESPONSIVE
+===================== */
+@media (max-width: 992px) {
+  .home-page .card {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .filters {
+    margin-bottom: 25px;
+  }
+
+  .banner-img {
+    margin-top: 0;
+  }
+
+  .home-page h1 {
+    font-size: 24px;
+  }
+}

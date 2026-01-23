@@ -1,0 +1,118 @@
+/* =========================
+CATEGORY PAGE WRAPPER
+========================= */
+.category {
+  scroll-margin-top: 120px;
+}
+
+/* Heading */
+.category h4 {
+  font-family: "Playfair Display", serif;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 5px;
+}
+
+.category h6 {
+  color: #666;
+  margin-bottom: 25px;
+}
+
+/* =========================
+PRODUCT CARD
+========================= */
+.category .card {
+  background: #ffffff;
+  width: 18rem;
+  border-radius: 14px;
+  border: none;
+  overflow: hidden;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+/* Hover effect */
+.category .card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 35px rgba(0, 0, 0, 0.15);
+}
+
+/* =========================
+IMAGE
+========================= */
+.category .card-img-top {
+  height: 260px !important;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.category .card:hover img {
+  transform: scale(1.05);
+}
+
+/* =========================
+CARD BODY
+========================= */
+.category .card-body {
+  padding: 15px;
+}
+
+/* Name + Price */
+.category .card-name-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.category .card-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #222;
+}
+
+/* Price */
+.category .card-price {
+  color: #198754;
+  font-weight: bold;
+}
+
+/* Description */
+.category .card-text {
+  font-size: 14px;
+  color: #666;
+  margin: 8px 0 12px;
+}
+
+/* =========================
+BUTTONS
+========================= */
+.category button {
+  width: 100%;
+  border-radius: 25px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.category .btn-info {
+  background: #0dcaf0;
+  border: none;
+}
+
+/* =========================
+RESPONSIVE
+========================= */
+@media (max-width: 992px) {
+  .category .card {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .category {
+    margin-top: 80px;
+  }
+
+  .category h4 {
+    font-size: 22px;
+  }
+}

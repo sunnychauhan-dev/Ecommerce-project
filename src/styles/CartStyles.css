@@ -1,0 +1,112 @@
+
+.cart-page {
+  margin-top: 50px;
+  /* padding: 20px; */
+}
+
+/* Header */
+.cart-page h1 {
+  padding: 18px !important;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  background: linear-gradient(90deg, #f8f9fa, #eef1f5);
+  border-radius: 10px;
+}
+
+.cart-page h4 {
+  margin-top: 10px;
+  color: #555;
+}
+
+/* Cart Item Card */
+.cart-page .card {
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.cart-page .card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.1);
+}
+
+.cart-page .card img {
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+/* Cart Item Text */
+.cart-page .card p {
+  margin-bottom: 6px;
+  color: #444;
+}
+
+.cart-page .card p:first-child {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+/* Remove Button */
+.cart-remove-btn button,
+.cart-page .btn-danger {
+  border-radius: 20px;
+  padding: 6px 14px;
+  font-size: 14px;
+}
+
+/* Cart Summary */
+.cart-summary {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  position: sticky;
+  top: 90px;
+}
+
+.cart-summary h2 {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.cart-summary hr {
+  margin: 15px 0;
+}
+
+.cart-summary h4 {
+  color: #222;
+  font-weight: 600;
+}
+
+/* Address box */
+.cart-summary h5 {
+  font-size: 15px;
+  color: #666;
+}
+
+/* Buttons */
+.cart-summary button {
+  border-radius: 25px;
+  padding: 10px 18px;
+}
+
+/* Payment Button */
+.cart-summary .btn-primary {
+  width: 100%;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+/* Empty Cart */
+.cart-page .text-center {
+  color: #777;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .cart-summary {
+    margin-top: 30px;
+    position: static;
+  }
+}

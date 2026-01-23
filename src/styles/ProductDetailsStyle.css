@@ -1,0 +1,171 @@
+/* =====================
+PAGE WRAPPER
+===================== */
+.product-details-page {
+  /* padding-top: 80px; navbar offset */
+  padding-bottom: 40px;
+}
+
+/* =====================
+PRODUCT IMAGE
+===================== */
+.product-image-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-image-wrapper img {
+  width: 100%;
+  max-width: 420px;
+  height: auto;
+  border-radius: 16px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* =====================
+PRODUCT INFO
+===================== */
+.product-details-info {
+  padding: 20px;
+}
+
+.product-details-info h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #222;
+}
+
+.product-details-info h6 {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+.product-details-info h6 span {
+  font-weight: 600;
+  color: #111;
+}
+
+/* Price Highlight */
+.product-price {
+  font-size: 22px;
+  font-weight: bold;
+  color: #198754;
+  margin: 15px 0;
+}
+
+/* =====================
+ADD TO CART BUTTON
+===================== */
+.product-details-info button {
+  background: #616465;
+  color: #fff;
+  border: none;
+  padding: 12px 22px;
+  border-radius:30px;
+  width: 60%;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.product-details-info button:hover {
+  background: #000;
+  transform: translateY(-2px);
+}
+
+/* =====================
+SIMILAR PRODUCTS
+===================== */
+.similar-products {
+  margin-top: 40px;
+}
+
+.similar-products h6 {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+/* =====================
+SIMILAR PRODUCT CARD
+===================== */
+.similar-products .card {
+  width: 18rem;
+  border-radius: 14px;
+  border: none;
+  overflow: hidden;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+.similar-products .card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 35px rgba(0, 0, 0, 0.15);
+}
+
+.similar-products .card-img-top {
+  height: 240px;
+  object-fit: cover;
+}
+
+.similar-products .card-body {
+  padding: 15px;
+}
+
+.similar-products .card-name-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.similar-products .card-title {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.similar-products .card-price {
+  color: #198754;
+  font-weight: bold;
+}
+
+.similar-products .card-text {
+  font-size: 14px;
+  color: #666;
+  margin: 8px 0 12px;
+}
+
+/* Button */
+.similar-products button {
+  width: 100%;
+  border-radius: 25px;
+  font-weight: 600;
+}
+
+/* =====================
+RESPONSIVE
+===================== */
+@media (max-width: 992px) {
+  .product-details-info h1 {
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 768px) {
+  .product-details-page {
+    padding-top: 70px;
+  }
+
+  .product-details-info {
+    text-align: center;
+  }
+
+  .product-image-wrapper img {
+    max-width: 100%;
+  }
+
+  .similar-products .card {
+    width: 100%;
+  }
+}
