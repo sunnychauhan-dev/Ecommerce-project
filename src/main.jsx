@@ -11,7 +11,6 @@ axios.defaults.baseURL =
   import.meta.env.VITE_API_URL || "http://localhost:3000";
 
 console.log(import.meta.env.VITE_API_URL);
-VM45:1 Uncaught SyntaxError: Cannot use 'import.meta' outside a module
 
 createRoot(document.getElementById("root")).render(
   <AuthProvider>
