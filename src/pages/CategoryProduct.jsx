@@ -39,7 +39,7 @@ const CategoryProduct = () => {
                   key={p._id}
                 >
                   <img
-                    src={`/api/product/product-photo/${p._id}`}
+                    src={`${import.meta.env.VITE_API_URL}/api/product/product-photo/${p._id}`} 
                     className="card-img-top"
                     alt={p.name}
                   />
