@@ -30,7 +30,6 @@ const UpdateProduct = () => {
       setId(data.product._id || "");
       setDescription(data.product.description);
       setPrice(data.product.price);
-      setPrice(data.product.price);
       setQuantity(data.product.quantity);
       setShipping(data.product.shipping);
       setCategory(data.product.category._id || "");
@@ -158,7 +157,7 @@ const UpdateProduct = () => {
                   id && (
                     <div className="text-center">
                       <img
-                        src={`/api/product/product-photo/${id}`}
+                        src={`${import.meta.env.VITE_API_URL}/api/product/product-photo/${id}`}
                         alt="product_photo"
                         height="200"
                         className="img img-responsive"
