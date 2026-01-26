@@ -130,7 +130,7 @@ const CartPage = () => {
               >
                 <div className="col-md-4 d-flex justify-content-center">
                   <img
-                    src={`/api/product/product-photo/${p._id}`}
+                    src={`${import.meta.env.VITE_API_URL}/api/product/product-photo/${p._id}`}
                     alt={p.name}
                     width="120"
                     height="120"
