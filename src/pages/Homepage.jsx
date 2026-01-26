@@ -152,7 +152,7 @@ const HomePage = () => {
             {products?.map((p) => (
               <div key={p._id} className="card m-2" style={{ width: "18rem" }}>
                 <img
-                  src={`/api/product/product-photo/${p._id}`}
+                  src={`${import.meta.env.VITE_API_URL}/api/product/product-photo/${p._id}`}
                   className="card-img-top"
                   alt={p.name}
                 />
