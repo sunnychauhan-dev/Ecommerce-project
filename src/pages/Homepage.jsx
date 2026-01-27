@@ -35,6 +35,7 @@ const HomePage = () => {
   useEffect(() => {
     getAllCategory();
     getTotal();
+    getAllProducts();
   }, []);
   //get products
   const getAllProducts = async () => {
