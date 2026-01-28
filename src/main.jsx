@@ -13,8 +13,6 @@ const API_URL =
 
 axios.defaults.baseURL = API_URL;
 
-console.log("VITE_API_URL =", import.meta.env.VITE_API_URL);
-
 createRoot(document.getElementById("root")).render(
   <AuthProvider>
     <SearchProvider>
